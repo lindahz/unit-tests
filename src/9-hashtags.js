@@ -1,3 +1,4 @@
 export const hashtags = (text) => {
-  return text
+  const toArray = text.trim().split(" ")
+   return (toArray.filter((hashtag) => hashtag[0] == "#"));
 }
